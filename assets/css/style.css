@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #a58fa6 ;
+    color: white;
+    height: 100vh;
+    font-family: "Space Grotesk", "aria";
+}
+
+header {
+    text-align: center;
+    height: 8vh;
+    border-bottom: 2px solid white;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    padding-top: 15px;
+}
+
+.choose-game {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10em;
+    
+}
+
+.choose-game-section {
+    margin: 50px 0;
+
+}
+
+#chooseh2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+
+/* rock, scissors and papper img/buttons */
+
+#rock-img {
+    height: 20vh;
+    width: 15vh;
+    border-radius: 3px;
+
+   
+    
+}
+
+#papper-img {
+    height: 20vh;
+    width: 15vh;
+    border-radius: 3px;
+}
+
+#scissors-img {
+    height: 20vh;
+    border-radius: 3px;
+}
+
+#rock-img:hover {
+    border: 2px solid white;
+
+}
+
+#papper-img:hover {
+    border: 2px solid white;
+}
+
+#scissors-img:hover {
+    border: 2px solid white;
+}
+
+#computer-move-img {
+    height: 20vh;
+    width: 15vh;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.move {
+    text-align: center;
+    margin: 25px 0;
+    
+}
+
+
+/*score section */
+
+.score-section {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    text-align: center;
+    width: 100%;
+}
+
+.score-table {
+    
+    border: 2px solid white;
+    
+
+   
+}
+
+th {
+    font-size: 2.5rem;
+    border-right: 1px solid white;
+}
+
+td {
+    font-size: 2.5rem;
+    padding: 50px;
+    width: 130px;
+    border-right: 1px solid white;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: 2px solid white;
+    margin-top: 9%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+footer h3 {
+    padding-top: 1%;
+}
+
+
+@media screen and (max-width:400px) {
+    
+    html {
+        margin: 0 auto;
+        font-size: 50%;
+        height: 100vh;
+        width: 75%;
+        overflow-y: none;
+        overflow-x: none;
+    }
+
+}
