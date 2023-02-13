@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Rock | Paper | Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+      <section class="choose-game-section">
+        <h2 id="chooseh2">Choose Rock, Scissors Or Paper!</h2>
+        <div class="choose-game">
+        <div class="choose-cont">
+          
+          <img id="rock-img"  src="/assets/images/rock.jpg" alt="">
+          <h2>ROCK</h2>
+        </div>
+        <div class="choose-cont">
+          
+          <img id="papper-img" src="/assets/images/papper.jpg" alt="paper-img-btn" />
+          <h2>PAPER</h2>
+        </div>
+        <div class="choose-cont">
+          
+          <img id="scissors-img" src="/assets/images/scissors.jpg" alt="scissors-img btn" />
+          <h2>SCISSORS</h2>
+        </div>
+        </div>
+
+      </section>
+      
+
+      </section>
+      <section class="score-section">
+        <div class="move">
+          <h2 id="move-result">Waiting For Your Move...</h2>
+          <img id="computer-move-img" src="" alt="computers-choiche-img">
+          <h2 id="who-wins">Result</h2>
+        </div>
+
+
+        <table class="score-table">
+          <tr id="score_th">
+            <th>Player</th>
+            <th>Computer</th>
+          </tr>
+          <tr>
+            <td id="player-score">0</td>
+            <td id="computer-score">0</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Rules</h3>
+      <p>Scissors cut papper | Paper covers Rock |Rock blunts Scissors</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/f6268d5ab3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/assets/js/script.js"></script>
+  </body>
+</html>
