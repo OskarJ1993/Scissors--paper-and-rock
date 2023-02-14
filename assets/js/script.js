@@ -19,17 +19,16 @@ let computerScore = 0;
 function compGenerete() {
     let compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
-        moveResult.textContent = "Computer Is Choosing Rock";
+        moveResult.textContent = "Computer Is Choosing Rock!";
         computerMoveImage_el.src = "../assets/images/rock.jpg";
-
         return "Rock";
 
     } else if (compChoice === 1) {
-        moveResult.textContent = "Computer Is Choosing Scissors";
+        moveResult.textContent = "Computer Is Choosing Scissors!";
         computerMoveImage_el.src = "../assets/images/scissors.jpg";
         return "Scissors";
     } else {
-        moveResult.textContent = "Computer Is Choosing Papper";
+        moveResult.textContent = "Computer Is Choosing Papper!";
         computerMoveImage_el.src = "../assets/images/papper.jpg";
         return "Papper";
     }
@@ -48,8 +47,8 @@ function whoWins(event) {
     if (whoWins === "ScissorsScissors" | whoWins === "PapperPapper" | whoWins === "RockRock") {
         whoWinsRound.innerText = "It Is A Draw";
     } else if (whoWins === "RockScissors" | whoWins === "PapperRock" | whoWins === "ScissorsPapper") {
-        whoWinsRound.innerText = "You Win!"
-        playerScore ++;
+        whoWinsRound.innerText = "You Win!";
+        playerScore++;
     } else if (whoWins === "RockPapper" | whoWins === "ScissorsRock" | whoWins === "PapperScissors") {
         whoWinsRound.innerText = "You Lose!"
         computerScore++;

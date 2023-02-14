@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     color: white;
     height: 100vh;
     font-family: "Space Grotesk", "aria";
+    overflow: hidden;
 }
 
 header {
@@ -69,16 +71,16 @@ header h1 {
 }
 
 #rock-img:hover {
-    border: 2px solid white;
+    border: 1px solid white;
 
 }
 
 #papper-img:hover {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 #scissors-img:hover {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 #computer-move-img {
@@ -130,25 +132,59 @@ td {
 
 footer {
     border-top: 2px solid white;
-    margin-top: 9%;
+    margin-top: 2%;
+    
     text-align: center;
+    width: 100%;
     font-size: 1.3rem;
+    position: absolute;
 }
 
 footer h3 {
-    padding-top: 1%;
+    padding-top: 7px;
 }
 
 
-@media screen and (max-width:400px) {
+/* for mobile and small screens */
+
+@media screen and (max-width:500px) {
     
     html {
         margin: 0 auto;
-        font-size: 50%;
+        font-size: 40%;
         height: 100vh;
-        width: 75%;
-        overflow-y: none;
-        overflow-x: none;
+        min-width: 50%;
+        overflow: none;
+    }
+
+    .choose-game-section {
+      width: 70%;
+      margin: 0 auto;
+     
+    }
+
+    #rock-img, #papper-img, #scissors-img {
+        width: 90%;
+        height: 90%;
+    }
+    
+    .move {
+        width: 30%;
+        margin-left: 19%;
+        
+    }
+
+    .score-section {
+        margin-top: 10%;
+    }
+
+    .score-table {
+        margin-right: 16%;
+    }
+    td {
+        width: 50px;
+        height: 50px;
+        padding: 30px 0;
     }
 
 }
