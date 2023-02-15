@@ -12,6 +12,7 @@ body {
     height: 100vh;
     font-family: "Space Grotesk", "aria";
     overflow: hidden;
+    max-width: 2000px;
 }
 
 header {
@@ -84,10 +85,11 @@ header h1 {
 }
 
 #computer-move-img {
-    height: 20vh;
-    width: 15vh;
-    margin: 10px 0;
+    height: 72%;
+    width: 42%;
+    margin: 10px 0 10px 100px;
     border-radius: 3px;
+    display: none;
 }
 
 .move {
@@ -147,12 +149,41 @@ footer h3 {
 
 /* for mobile and small screens */
 
+@media screen and (max-width:350px) {
+    
+    body {
+        width:99%;
+        margin: 0 auto;
+    }
+
+    .score-table {
+        border: 1px solid white;
+        
+    
+       
+    }
+
+    #move-result {
+       
+    }
+
+    #computer-move-img {
+       margin-left: 15px;
+       width: 40%;
+       height: 40%;
+        
+    }
+}
+
+
+/* for mobile with middle screens */
+
 @media screen and (max-width:500px) {
     
     html {
         margin: 0 auto;
         font-size: 40%;
-        height: 100vh;
+        max-height: 100vh;
         min-width: 50%;
         overflow: none;
     }
@@ -169,22 +200,90 @@ footer h3 {
     }
     
     .move {
-        width: 30%;
+        width: 40%;
         margin-left: 19%;
         
     }
 
+    #computer-move-img {
+        margin: 0 0 0 10px;
+        width: 70%;
+        height: 60%;
+        padding-top: 3px;
+    }
+
+   
+
+    /*score board*/
+
+    
     .score-section {
         margin-top: 10%;
     }
 
+
     .score-table {
         margin-right: 16%;
+        border-right: none;
+    }
+
+    th {
+        font-size: 1.6rem;
+        padding: 10px;
     }
     td {
+        
         width: 50px;
         height: 50px;
         padding: 30px 0;
     }
 
+
+    /* Footer */
+
+    footer {
+        margin-top: 30px;
+    }
 }
+
+
+/* for tablets */
+
+@media screen and (max-width:950px) {
+
+    body {
+        width: 94%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+        /* buttons */
+
+    #rock-img, #papper-img, #scissors-img {
+        width: 70%;
+        height: 70%;
+    }
+
+    /* table and computer coice image */
+
+
+
+    #computer-move-img {
+        margin: 0 0 0 80px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    table {
+        margin-right: 10px;
+        border-right: hidden;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+}
+
+

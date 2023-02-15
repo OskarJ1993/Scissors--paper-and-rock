@@ -1,9 +1,9 @@
 const pScoreCountEL = document.getElementById("player-score");
 const cCountEL = document.getElementById("computer-score");
-const computerMoveImage_el = document.getElementById("computer-move-img")
+const cMoveImageEl = document.getElementById("computer-move-img");
 const moveResult = document.getElementById("move-result");
 const whoWinsRound = document.getElementById("who-wins");
-const characterCards = document.querySelectorAll(".character-card")
+const characterCards = document.querySelectorAll(".character-card");
 
 
 let playerScore = 0;
@@ -13,13 +13,12 @@ let computerScore = 0;
  /**
   * Listning to click Rock, papper or scissors from user
   */
-
-for (let characterCard of characterCards) {
+ for (let characterCard of characterCards) {
     characterCard.addEventListener("click", function(event){
         let clickedCard = event.currentTarget;
         let character = clickedCard.dataset.character;
         return winGene(character);
-    })
+    });
 }
 
 
@@ -31,16 +30,19 @@ function compGenerete() {
     let compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
         moveResult.textContent = "Computer Is Choosing Rock!";
-        computerMoveImage_el.src = "assets/images/rock.jpg";
+        cMoveImageEl.src = "assets/images/rock.jpg";
+        cMoveImageEl.style.display = "block";
         return "Rock";
 
     } else if (compChoice === 1) {
         moveResult.textContent = "Computer Is Choosing Scissors!";
-        computerMoveImage_el.src = "assets/images/scissors.jpg";
+        cMoveImageEl.src = "assets/images/scissors.jpg";
+        cMoveImageEl.style.display = "block";
         return "Scissors";
     } else {
         moveResult.textContent = "Computer Is Choosing Papper!";
-        computerMoveImage_el.src = "assets/images/papper.jpg";
+        cMoveImageEl.src = "assets/images/papper.jpg";
+        cMoveImageEl.style.display = "block";
         return "Paper";
     }
 }
@@ -55,13 +57,14 @@ function winGene(event) {
     let whoWin = compGenerete();
     let whoWins = event + whoWin;
 
-    if (whoWins === "ScissorsScissors" | whoWins === "PaperPaper" | whoWins === "RockRock") {
-        whoWinsRound.textContent = "It Is A Draw";
-    } else if (whoWins === "RockScissors" | whoWins === "PaperRock" | whoWins === "ScissorsPaper") {
+
+    if (whoWins === "ScissorsScissors" || whoWins === "PaperPaper" || whoWins === "RockRock") {
+        whoWinsRound.textContent = "It Is A Draw!";
+    } else if (whoWins === "RockScissors" || whoWins === "PaperRock" || whoWins === "ScissorsPaper") {
         whoWinsRound.textContent = "You Win!";
         playerScore++;
-    } else if (whoWins === "RockPapper" | whoWins === "ScissorsRock" | whoWins === "PaperScissors") {
-        whoWinsRound.textContent = "You Lose!"
+    } else if (whoWins === "RockPapper" || whoWins === "ScissorsRock" || whoWins === "PaperScissors") {
+        whoWinsRound.textContent = "You Lose!";
         computerScore++;
     }
 
