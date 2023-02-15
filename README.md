@@ -21,11 +21,10 @@ Rock, Scissors and Paper is a classic game, built using basic JavaScript. User w
 
 
 ## Future Features
+
 - Timer
 
 ## Wireframes
-
-- Here is a link to my design in Figma.
 
 Click [here](https://www.figma.com/file/P8xZBBcfRXOf2HSx5JIGaD/Untitled?node-id=0%3A1&t=MFMBP8rUwQYqY6o8-0) to go to Figma. 
 
@@ -54,10 +53,14 @@ JsHint.
 
 #### LightHouse test
  - Here is a screenshot of result.
+ 
+ 
  ![Logo](assets/readme-images/lighthousetest.JPG)
 
  #### JsHint validator
   - Here is a screenshot of result.
+ 
+ 
  ![Logo](assets/readme-images/jstest.JPG)
 
 
@@ -69,6 +72,25 @@ JsHint.
 - Mobile: Google Chrome, Safari.
 
 
+## Deployment
+
+The website will be deployed using the following methods:
+
+### Via Github pages:
+
+- Open GitHub repository and open the settings tab
+
+- From settings navigate to pages tab
+
+- Under branch, select the main branch through the dropdown menu
+
+- Once selected and saved, the page will be refreshed (in case of nothing happening wait for a couple muinites and refresh page manually)
+
+- The refreshed page will show a detailed ribbon containing the website link and indicate a successful deployment.
 
 
+## Credits 
 
+- [Google Fonts](https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap)
+
+- [Stackoverflow](https://stackoverflow.com/) On stackoverflow I could find answers for every problem I had.
