@@ -1,20 +1,23 @@
 # Rock, Scissors and Paper
 
+
+![](assets/readme-images/amiresponsive.JPG)
+
 Rock, Scissors and Paper is a classic game, built using basic JavaScript. User will pick scissors, paper or rock and computer will pick one. 
 
 ## Features
 
 ### __Selection For User__
  - Here can user pick Rock, Scissors and Paper. 
-![Pick](media/love_maths_logo.png)
+![Pick](assets/readme-images/usertakes.jpg)
 
 ### __Computer is Choosing And Showing Who Wins__
  - In This Area Shows What Computer Choose And Showing Who Wins.
- ![Logo](media/love_maths_logo.png)
+ ![Logo](assets/readme-images/computertakes.JPG)
 
 ### __Scoreboard Area__
  - Here it Shows how many points the user and computer has.
- ![Logo](media/love_maths_logo.png)
+ ![Logo](assets/readme-images/scoreboard.JPG)
 
 
 ## Future Features
@@ -40,21 +43,22 @@ Click [here](https://www.figma.com/file/P8xZBBcfRXOf2HSx5JIGaD/Untitled?node-id=
 JsHint.
 
 #### W3C Markup Validator
+- Html Validator is showing one error coused by img src is not decleared. But it is declered in JavaScript.
 
  - Here is a screenshot of result.
- ![Logo](media/love_maths_logo.png)
+ ![Logo](assets/readme-images/htmlvalidator.JPG)
 
 #### W3C Css Validator
  - Here is a screenshot of result.
- ![Logo](media/love_maths_logo.png)
+ ![Logo](assets/readme-images/cssvalidator.JPG)
 
 #### LightHouse test
  - Here is a screenshot of result.
- ![Logo](media/love_maths_logo.png)
+ ![Logo](assets/readme-images/lighthousetest.JPG)
 
  #### JsHint validator
   - Here is a screenshot of result.
- ![Logo](media/love_maths_logo.png)
+ ![Logo](assets/readme-images/jstest.JPG)
 
 
  ## Supported Browsers
