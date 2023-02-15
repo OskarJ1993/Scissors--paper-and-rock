@@ -71,16 +71,16 @@ header h1 {
 }
 
 #rock-img:hover {
-    border: 1px solid white;
+    outline: 1px solid white;
 
 }
 
 #papper-img:hover {
-    border: 1px solid white;
+    outline: 1px solid white;
 }
 
 #scissors-img:hover {
-    border: 1px solid white;
+    outline: 1px solid white;
 }
 
 #computer-move-img {

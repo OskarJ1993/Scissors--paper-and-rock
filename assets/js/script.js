@@ -1,15 +1,26 @@
-let player_score_count_EL = document.getElementById("player-score");
-let computer_score_count_EL = document.getElementById("computer-score");
-let chooseRock_EL = document.getElementById("rock-img");
-let choosePapper_EL = document.getElementById("papper-img");
-let chooseScissors_EL = document.getElementById("scissors-img");
-let computerMoveImage_el = document.getElementById("computer-move-img")
-let moveResult = document.getElementById("move-result");
-let whoWinsRound = document.getElementById("who-wins");
+const pScoreCountEL = document.getElementById("player-score");
+const cCountEL = document.getElementById("computer-score");
+const computerMoveImage_el = document.getElementById("computer-move-img")
+const moveResult = document.getElementById("move-result");
+const whoWinsRound = document.getElementById("who-wins");
+const characterCards = document.querySelectorAll(".character-card")
 
 
 let playerScore = 0;
 let computerScore = 0;
+
+
+ /**
+  * Listning to click Rock, papper or scissors from user
+  */
+
+for (let characterCard of characterCards) {
+    characterCard.addEventListener("click", function(event){
+        let clickedCard = event.currentTarget;
+        let character = clickedCard.dataset.character;
+        return winGene(character);
+    })
+}
 
 
 /**
@@ -20,17 +31,17 @@ function compGenerete() {
     let compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
         moveResult.textContent = "Computer Is Choosing Rock!";
-        computerMoveImage_el.src = "../assets/images/rock.jpg";
+        computerMoveImage_el.src = "assets/images/rock.jpg";
         return "Rock";
 
     } else if (compChoice === 1) {
         moveResult.textContent = "Computer Is Choosing Scissors!";
-        computerMoveImage_el.src = "../assets/images/scissors.jpg";
+        computerMoveImage_el.src = "assets/images/scissors.jpg";
         return "Scissors";
     } else {
         moveResult.textContent = "Computer Is Choosing Papper!";
-        computerMoveImage_el.src = "../assets/images/papper.jpg";
-        return "Papper";
+        computerMoveImage_el.src = "assets/images/papper.jpg";
+        return "Paper";
     }
 }
 
@@ -40,39 +51,23 @@ function compGenerete() {
      * Adding who wins to the scoreboard and variables.
      */
 
-function whoWins(event) {
+function winGene(event) {
     let whoWin = compGenerete();
     let whoWins = event + whoWin;
 
-    if (whoWins === "ScissorsScissors" | whoWins === "PapperPapper" | whoWins === "RockRock") {
-        whoWinsRound.innerText = "It Is A Draw";
-    } else if (whoWins === "RockScissors" | whoWins === "PapperRock" | whoWins === "ScissorsPapper") {
-        whoWinsRound.innerText = "You Win!";
+    if (whoWins === "ScissorsScissors" | whoWins === "PaperPaper" | whoWins === "RockRock") {
+        whoWinsRound.textContent = "It Is A Draw";
+    } else if (whoWins === "RockScissors" | whoWins === "PaperRock" | whoWins === "ScissorsPaper") {
+        whoWinsRound.textContent = "You Win!";
         playerScore++;
-    } else if (whoWins === "RockPapper" | whoWins === "ScissorsRock" | whoWins === "PapperScissors") {
-        whoWinsRound.innerText = "You Lose!"
+    } else if (whoWins === "RockPapper" | whoWins === "ScissorsRock" | whoWins === "PaperScissors") {
+        whoWinsRound.textContent = "You Lose!"
         computerScore++;
     }
 
-    player_score_count_EL.textContent = playerScore;
-    computer_score_count_EL.textContent = computerScore;
+    pScoreCountEL.textContent = playerScore;
+    cCountEL.textContent = computerScore;
 }
 
- /**
-  * Listning to click Rock, papper or scissors from user
-  */
 
-chooseScissors_EL.addEventListener("click", function(){
-     return whoWins("Scissors");
-}) 
-
-choosePapper_EL.addEventListener("click", function() {
-    return whoWins("Papper")
-   
-})
-
-chooseRock_EL.addEventListener("click", function() {
-    return whoWins("Rock")
-    
-})
 
