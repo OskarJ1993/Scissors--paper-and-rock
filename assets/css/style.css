@@ -1,288 +1,253 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #a58fa6 ;
-    color: white;
-    height: 100vh;
-    font-family: "Space Grotesk", "aria";
-    overflow: hidden;
-    max-width: 2000px;
+  background-color: #a58fa6;
+  color: white;
+  height: 100vh;
+  font-family: "Space Grotesk", "aria";
+  overflow: hidden;
+  max-width: 2000px;
 }
 
 header {
-    text-align: center;
-    height: 8vh;
-    border-bottom: 2px solid white;
-    font-size: 1.4rem;
-    padding-bottom: 20px;
+  text-align: center;
+  height: 8vh;
+  border-bottom: 2px solid white;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
 }
 
 header h1 {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .choose-game {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10em;
-    
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10em;
 }
 
 .choose-game-section {
-    margin: 50px 0;
-
+  margin: 50px 0;
 }
 
 #chooseh2 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
-
 
 /* rock, scissors and papper img/buttons */
 
 #rock-img {
-    height: 20vh;
-    width: 15vh;
-    border-radius: 3px;
-
-   
-    
+  height: 20vh;
+  width: 15vh;
+  border-radius: 3px;
 }
 
 #papper-img {
-    height: 20vh;
-    width: 15vh;
-    border-radius: 3px;
+  height: 20vh;
+  width: 15vh;
+  border-radius: 3px;
 }
 
 #scissors-img {
-    height: 20vh;
-    border-radius: 3px;
+  height: 20vh;
+  border-radius: 3px;
 }
 
 #rock-img:hover {
-    outline: 1px solid white;
-
+  outline: 1px solid white;
 }
 
 #papper-img:hover {
-    outline: 1px solid white;
+  outline: 1px solid white;
 }
 
 #scissors-img:hover {
-    outline: 1px solid white;
+  outline: 1px solid white;
 }
 
 #computer-move-img {
-    height: 72%;
-    width: 42%;
-    margin: 10px 0 10px 100px;
-    border-radius: 3px;
-    display: none;
+  height: 72%;
+  width: 42%;
+  margin: 10px 0 10px 100px;
+  border-radius: 3px;
+  display: none;
 }
 
 .move {
-    text-align: center;
-    margin: 25px 0;
-    
+  text-align: center;
+  margin: 25px 0;
 }
-
 
 /*score section */
 
 .score-section {
-    display: flex;
-    justify-content: center;
-    gap: 90px;
-    text-align: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  text-align: center;
+  width: 100%;
 }
 
 .score-table {
-    
-    border: 2px solid white;
-    
-
-   
+  border: 2px solid white;
 }
 
 th {
-    font-size: 2.5rem;
-    border-right: 1px solid white;
+  font-size: 2.5rem;
+  border-right: 1px solid white;
 }
 
 td {
-    font-size: 2.5rem;
-    padding: 50px;
-    width: 130px;
-    border-right: 1px solid white;
+  font-size: 2.5rem;
+  padding: 50px;
+  width: 130px;
+  border-right: 1px solid white;
 }
-
 
 /* Footer */
 
 footer {
-    border-top: 2px solid white;
-    margin-top: 2%;
-    
-    text-align: center;
-    width: 100%;
-    font-size: 1.3rem;
-    position: absolute;
+  border-top: 2px solid white;
+  margin-top: 2%;
+
+  text-align: center;
+  width: 100%;
+  font-size: 1.3rem;
+  position: absolute;
 }
 
 footer h3 {
-    padding-top: 7px;
+  padding-top: 7px;
 }
-
 
 /* for mobile and small screens */
 
-@media screen and (max-width:350px) {
-    
-    body {
-        width:99%;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 350px) {
+  body {
+    width: 99%;
+    margin: 0 auto;
+  }
 
-    .score-table {
-        border: 1px solid white;
-        
-    
-       
-    }
+  .score-table {
+    border: 1px solid white;
+  }
 
-    #move-result {
-       
-    }
+  #move-result {
+  }
 
-    #computer-move-img {
-       margin-left: 15px;
-       width: 40%;
-       height: 40%;
-        
-    }
+  #computer-move-img {
+    margin-left: 15px;
+    width: 40%;
+    height: 40%;
+  }
 }
-
 
 /* for mobile with middle screens */
 
-@media screen and (max-width:500px) {
-    
-    html {
-        margin: 0 auto;
-        font-size: 40%;
-        max-height: 100vh;
-        min-width: 50%;
-    }
+@media screen and (max-width: 500px) {
+  html {
+    margin: 0 auto;
+    font-size: 40%;
+    max-height: 100vh;
+    min-width: 50%;
+  }
 
-    .choose-game-section {
-      width: 70%;
-      margin: 0 auto;
-     
-    }
+  .choose-game-section {
+    width: 70%;
+    margin: 0 auto;
+  }
 
-    #rock-img, #papper-img, #scissors-img {
-        width: 90%;
-        height: 90%;
-    }
-    
-    .move {
-        width: 40%;
-        margin-left: 19%;
-        
-    }
+  #rock-img,
+  #papper-img,
+  #scissors-img {
+    width: 90%;
+    height: 90%;
+  }
 
-    #computer-move-img {
-        margin: 0 0 0 10px;
-        width: 70%;
-        height: 60%;
-        padding-top: 3px;
-    }
+  .move {
+    width: 40%;
+    margin-left: 19%;
+  }
 
-   
+  #computer-move-img {
+    margin: 0 0 0 10px;
+    width: 70%;
+    height: 60%;
+    padding-top: 3px;
+  }
 
-    /*score board*/
+  /*score board*/
 
-    
-    .score-section {
-        margin-top: 10%;
-    }
+  .score-section {
+    margin-top: 10%;
+  }
 
+  .score-table {
+    margin-right: 16%;
+    border-right: none;
+  }
 
-    .score-table {
-        margin-right: 16%;
-        border-right: none;
-    }
+  th {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+  td {
+    width: 50px;
+    height: 50px;
+    padding: 30px 0;
+  }
 
-    th {
-        font-size: 1.6rem;
-        padding: 10px;
-    }
-    td {
-        
-        width: 50px;
-        height: 50px;
-        padding: 30px 0;
-    }
+  /* Footer */
 
-
-    /* Footer */
-
-    footer {
-        margin-top: 30px;
-    }
+  footer {
+    margin-top: 30px;
+  }
 }
-
 
 /* for tablets */
 
-@media screen and (max-width:950px) {
+@media screen and (max-width: 950px) {
+  body {
+    width: 94%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-    body {
-        width: 94%;
-        margin: 0 auto;
-        text-align: center;
-    }
+  /* buttons */
 
-        /* buttons */
+  #rock-img,
+  #papper-img,
+  #scissors-img {
+    width: 70%;
+    height: 70%;
+  }
 
-    #rock-img, #papper-img, #scissors-img {
-        width: 70%;
-        height: 70%;
-    }
+  /* table and computer coice image */
 
-    /* table and computer coice image */
+  #computer-move-img {
+    margin: 0 0 0 80px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
 
+  table {
+    margin-right: 10px;
+    border-right: hidden;
+  }
 
-
-    #computer-move-img {
-        margin: 0 0 0 80px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-    }
-
-    table {
-        margin-right: 10px;
-        border-right: hidden;
-    }
-
-    footer {
-        text-align: center;
-        margin-top: 50px;
-    }
-
+  footer {
+    text-align: center;
+    margin-top: 50px;
+  }
 }
-
-
