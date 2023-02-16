@@ -9,14 +9,20 @@ Rock, Scissors and Paper is a classic game, built using basic JavaScript. User w
 
 ### __Selection For User__
  - Here can user pick Rock, Scissors and Paper. 
+
+
 ![Pick](assets/readme-images/usertakes.jpg)
 
 ### __Computer is Choosing And Showing Who Wins__
  - In This Area Shows What Computer Choose And Showing Who Wins.
+ 
+ 
  ![Logo](assets/readme-images/computertakes.JPG)
 
 ### __Scoreboard Area__
  - Here it Shows how many points the user and computer has.
+ 
+ 
  ![Logo](assets/readme-images/scoreboard.JPG)
 
 
@@ -45,10 +51,14 @@ JsHint.
 - Html Validator is showing one error coused by img src is not decleared. But it is declered in JavaScript.
 
  - Here is a screenshot of result.
+ 
+ 
  ![Logo](assets/readme-images/htmlvalidator.JPG)
 
 #### W3C Css Validator
  - Here is a screenshot of result.
+ 
+ 
  ![Logo](assets/readme-images/cssvalidator.JPG)
 
 #### LightHouse test
@@ -69,6 +79,7 @@ JsHint.
 - The website was tested on following browser:
 
 - Desktop: Google Chrome, Mozilla Firefox and Microsoft Edge.
+
 - Mobile: Google Chrome, Safari.
 
 
@@ -94,3 +105,5 @@ The website will be deployed using the following methods:
 - [Google Fonts](https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap)
 
 - [Stackoverflow](https://stackoverflow.com/) On stackoverflow I could find answers for every problem I had.
+
+- Extra credit to my mentor at codeinstitute for giving advice and good feedback.
