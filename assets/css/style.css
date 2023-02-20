@@ -8,10 +8,11 @@
 body {
   background-color: #a58fa6;
   color: white;
-  height: 100vh;
+  height: 100%;
   font-family: "Space Grotesk", "aria";
   overflow: hidden;
   max-width: 2000px;
+  margin: 0 auto;
 }
 
 header {
@@ -77,11 +78,15 @@ header h1 {
 }
 
 #computer-move-img {
-  height: 72%;
-  width: 42%;
-  margin: 10px 0 10px 100px;
+  height: 100px;
+  width: 100px;
+  margin: 10px 0 10px 6px;
   border-radius: 3px;
-  display: none;
+  
+}
+
+#move-result {
+  width: 35ch;
 }
 
 .move {
@@ -99,32 +104,25 @@ header h1 {
   width: 100%;
 }
 
-.score-table {
+.result {
   border: 2px solid white;
+  height: 50px;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto;
 }
 
-th {
-  font-size: 2.5rem;
-  border-right: 1px solid white;
-}
-
-td {
-  font-size: 2.5rem;
-  padding: 50px;
-  width: 130px;
-  border-right: 1px solid white;
-}
 
 /* Footer */
 
 footer {
   border-top: 2px solid white;
   margin-top: 2%;
-
   text-align: center;
   width: 100%;
+  height: 50px;
   font-size: 1.3rem;
-  position: absolute;
+
 }
 
 footer h3 {
@@ -134,23 +132,14 @@ footer h3 {
 /* for mobile and small screens */
 
 @media screen and (max-width: 350px) {
-  body {
-    width: 99%;
-    margin: 0 auto;
-  }
+html {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
 
-  .score-table {
-    border: 1px solid white;
-  }
 
-  #move-result {
-  }
-
-  #computer-move-img {
-    margin-left: 15px;
-    width: 40%;
-    height: 40%;
-  }
 }
 
 /* for mobile with middle screens */
@@ -158,61 +147,45 @@ footer h3 {
 @media screen and (max-width: 500px) {
   html {
     margin: 0 auto;
-    font-size: 40%;
-    max-height: 100vh;
+    font-size: 35%;
+    min-height: 100%;
     min-width: 50%;
+    overflow: hidden;
   }
 
   .choose-game-section {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
   }
 
   #rock-img,
   #papper-img,
   #scissors-img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
   }
 
   .move {
-    width: 40%;
-    margin-left: 19%;
+  margin: 15px auto;
   }
 
   #computer-move-img {
-    margin: 0 0 0 10px;
-    width: 70%;
-    height: 60%;
-    padding-top: 3px;
+    margin-left: 10px!important;
+    width: 70px;
+    height: 70px;
   }
 
   /*score board*/
 
+
   .score-section {
-    margin-top: 10%;
+    width: 100%;
+  
   }
 
-  .score-table {
-    margin-right: 16%;
-    border-right: none;
-  }
-
-  th {
-    font-size: 1.6rem;
-    padding: 10px;
-  }
-  td {
-    width: 50px;
-    height: 50px;
-    padding: 30px 0;
-  }
 
   /* Footer */
 
-  footer {
-    margin-top: 30px;
-  }
 }
 
 /* for tablets */
@@ -220,6 +193,7 @@ footer h3 {
 @media screen and (max-width: 950px) {
   body {
     width: 94%;
+    height: 100%;
     margin: 0 auto;
     text-align: center;
   }
@@ -248,6 +222,6 @@ footer h3 {
 
   footer {
     text-align: center;
-    margin-top: 50px;
+    height: 100%;
   }
 }

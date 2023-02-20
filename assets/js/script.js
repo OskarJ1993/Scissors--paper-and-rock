@@ -30,16 +30,19 @@ function compGenerete() {
     moveResult.textContent = "Computer Is Choosing Rock!";
     cMoveImageEl.src = "assets/images/rock.jpg";
     cMoveImageEl.style.display = "block";
+    cMoveImageEl.style.marginLeft = "220px";
     return "Rock";
   } else if (compChoice === 1) {
     moveResult.textContent = "Computer Is Choosing Scissors!";
     cMoveImageEl.src = "assets/images/scissors.jpg";
     cMoveImageEl.style.display = "block";
+    cMoveImageEl.style.marginLeft = "220px";
     return "Scissors";
   } else {
     moveResult.textContent = "Computer Is Choosing Papper!";
     cMoveImageEl.src = "assets/images/papper.jpg";
     cMoveImageEl.style.display = "block";
+   cMoveImageEl.style.marginLeft = "220px";
     return "Paper";
   }
 }
@@ -78,4 +81,3 @@ function winGene(event) {
   pScoreCountEL.textContent = playerScore;
   cCountEL.textContent = computerScore;
 }
-
