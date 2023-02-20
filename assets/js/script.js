@@ -26,25 +26,30 @@ for (let characterCard of characterCards) {
 
 function compGenerete() {
   let compChoice = Math.floor(Math.random() * 3);
+  let smallScreen = window.matchMedia("(max-width: 350px)");
+  let middleSmallScreen = window.matchMedia("(max-width: 500px)");
+  let middleScreen = window.matchMedia("(max-width: 950px)");
   if (compChoice === 0) {
     moveResult.textContent = "Computer Is Choosing Rock!";
     cMoveImageEl.src = "assets/images/rock.jpg";
-    cMoveImageEl.style.display = "block";
-    cMoveImageEl.style.marginLeft = "220px";
+ 
+
+
     return "Rock";
   } else if (compChoice === 1) {
     moveResult.textContent = "Computer Is Choosing Scissors!";
     cMoveImageEl.src = "assets/images/scissors.jpg";
-    cMoveImageEl.style.display = "block";
-    cMoveImageEl.style.marginLeft = "220px";
+
+  
     return "Scissors";
   } else {
     moveResult.textContent = "Computer Is Choosing Papper!";
     cMoveImageEl.src = "assets/images/papper.jpg";
-    cMoveImageEl.style.display = "block";
-   cMoveImageEl.style.marginLeft = "220px";
+
     return "Paper";
   }
+
+
 }
 
 /**
