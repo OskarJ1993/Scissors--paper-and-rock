@@ -26,9 +26,6 @@ for (let characterCard of characterCards) {
 
 function compGenerete() {
   let compChoice = Math.floor(Math.random() * 3);
-  let smallScreen = window.matchMedia("(max-width: 350px)");
-  let middleSmallScreen = window.matchMedia("(max-width: 500px)");
-  let middleScreen = window.matchMedia("(max-width: 950px)");
   if (compChoice === 0) {
     moveResult.textContent = "Computer Is Choosing Rock!";
     cMoveImageEl.src = "assets/images/rock.jpg";
